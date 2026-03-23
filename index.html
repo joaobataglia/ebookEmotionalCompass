@@ -1,0 +1,433 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bússola Emocional na Prática</title>
+
+    <!-- Single CSS entry point -->
+    <link rel="stylesheet" href="styles/main.css" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Poppins:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- ===================== SECTION 1: HERO ===================== -->
+    <section id="hero">
+      <div class="hero__bg-texture"></div>
+
+      <div class="hero__container">
+        <div class="hero__text-col">
+          <span class="hero__eyebrow">E-book</span>
+
+          <h1 class="hero__headline">
+            Veja agora como entender suas emoções, identificar padrões e reorganizar suas respostas internas usando a
+            <em>Bússola Emocional</em>
+            , mesmo que tudo pareça confuso hoje
+          </h1>
+
+          <p class="hero__subtitle">
+            Uma forma simples de organizar o que você sente, compreender seus padrões e trazer mais clareza emocional para o seu dia a dia
+          </p>
+
+          <a href="#" class="btn-primary hero__cta">
+            Quero acessar agora
+            <span class="btn-primary__arrow">→</span>
+          </a>
+        </div>
+
+        <div class="hero__image-col">
+          <div class="hero__book-wrapper">
+            <!-- Replace src with your actual ebook cover image -->
+            <img
+              src="ebook-cover.png"
+              alt="Capa do e-book Bússola Emocional na Prática"
+              class="hero__book-img"
+              onerror="
+                this.style.display = 'none';
+                this.nextElementSibling.style.display = 'flex';
+              "
+            />
+            <!-- Placeholder shown when image is missing -->
+            <div class="hero__book-placeholder">
+              <span>
+                Capa do
+                <br />
+                E-book
+              </span>
+            </div>
+            <div class="hero__book-glow"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SECTION 2: IDENTIFICATION ===================== -->
+    <section id="identification">
+      <div class="identification__container">
+        <p class="identification__line reveal">Você já sentiu que algumas emoções simplesmente aparecem…</p>
+
+        <p class="identification__line identification__line--accented reveal">E você não entende de onde vêm?</p>
+
+        <p class="identification__line reveal">Ou percebe que repete certos padrões, mesmo tentando mudar?</p>
+
+        <p class="identification__line reveal">Às vezes tudo parece confuso por dentro, difícil de explicar, difícil de organizar</p>
+      </div>
+    </section>
+
+    <!-- ===================== SECTION 3: PAIN ===================== -->
+    <section id="pain">
+      <!-- Decorative SVG trails — abstract flowing paths -->
+      <svg class="pain__trails" viewBox="0 0 1200 400" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice">
+        <path class="pain__trail pain__trail--1" d="M-50,200 C150,80 300,320 500,180 C700,40 850,300 1050,160 C1150,100 1200,140 1260,120" />
+        <path class="pain__trail pain__trail--2" d="M-50,260 C100,160 280,360 480,240 C680,120 820,340 1020,200 C1120,140 1200,180 1260,160" />
+        <path class="pain__trail pain__trail--3" d="M-50,320 C200,220 350,380 560,280 C760,180 900,360 1100,260 C1180,220 1220,240 1260,230" />
+      </svg>
+
+      <div class="pain__container">
+        <p class="pain__line reveal">E isso pode gerar uma sensação silenciosa:</p>
+
+        <p class="pain__line pain__line--question reveal">"Por que eu continuo reagindo assim?"</p>
+
+        <p class="pain__line reveal">Mesmo buscando respostas, mesmo tentando entender.</p>
+
+        <p class="pain__line reveal">As emoções continuam vindo, os padrões continuam se repetindo</p>
+      </div>
+    </section>
+
+    <!-- ===================== SECTION 4: PATTERN BREAK ===================== -->
+    <section id="pattern-break">
+      <div class="pattern-break__container">
+        <p class="pattern-break__line reveal">O problema não é falta de consciência.</p>
+
+        <p class="pattern-break__line pattern-break__line--emphasis reveal">
+          Muitas vezes, falta um caminho claro para entender o que está acontecendo dentro de você.
+        </p>
+
+        <p class="pattern-break__line reveal">Porque sentir você já sente,</p>
+
+        <p class="pattern-break__line pattern-break__line--contrast reveal">mas organizar isso… é outra coisa</p>
+      </div>
+    </section>
+
+    <!-- ===================== SECTION 5: SOLUTION ===================== -->
+    <section id="solution">
+      <div class="solution__container">
+        <div class="solution__text reveal">
+          <h2 class="solution__title">A Bússola Emocional na Prática</h2>
+          <p class="solution__subtitle">Um guia para te ajudar a entender, organizar e dar direção ao que você sente</p>
+        </div>
+
+        <div class="solution__image-wrapper reveal">
+          <img
+            src="ebook-cover.png"
+            alt="Capa do e-book Bússola Emocional na Prática"
+            class="solution__image"
+            onerror="
+              this.style.display = 'none';
+              this.nextElementSibling.style.display = 'flex';
+            "
+          />
+          <!-- Placeholder shown when image is missing -->
+          <div class="solution__image-placeholder">
+            <span>
+              Capa do
+              <br />
+              E-book
+            </span>
+          </div>
+          <div class="solution__image-glow"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SECTION 6: DELIVERABLES ===================== -->
+    <section id="deliverables">
+      <div class="deliverables__container">
+        <h2 class="deliverables__title reveal">O que você vai receber</h2>
+
+        <ul class="deliverables__list">
+          <li class="deliverables__item reveal">
+            <span class="deliverables__icon" aria-hidden="true">
+              <!-- Compass -->
+              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="20" cy="20" r="14" stroke="currentColor" stroke-width="1.5" />
+                <circle cx="20" cy="20" r="2" fill="currentColor" />
+                <polygon points="20,8 22.5,18 20,20 17.5,18" fill="currentColor" opacity="0.9" />
+                <polygon points="20,32 17.5,22 20,20 22.5,22" fill="currentColor" opacity="0.35" />
+                <line x1="20" y1="6" x2="20" y2="4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                <line x1="20" y1="36" x2="20" y2="34" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                <line x1="6" y1="20" x2="4" y2="20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                <line x1="36" y1="20" x2="34" y2="20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+              </svg>
+            </span>
+            <div class="deliverables__text">
+              <strong class="deliverables__name">Guia da Bússola Emocional</strong>
+              <span class="deliverables__desc">
+                Explica como identificar emoções, padrões e sinais do corpo de forma clara e aplicável no dia a dia
+              </span>
+            </div>
+          </li>
+
+          <li class="deliverables__item reveal">
+            <span class="deliverables__icon" aria-hidden="true">
+              <!-- Map -->
+              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <polygon
+                  points="6,8 15,12 25,8 34,12 34,32 25,28 15,32 6,28"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linejoin="round"
+                  fill="none"
+                />
+                <line x1="15" y1="12" x2="15" y2="32" stroke="currentColor" stroke-width="1.5" />
+                <line x1="25" y1="8" x2="25" y2="28" stroke="currentColor" stroke-width="1.5" />
+              </svg>
+            </span>
+            <div class="deliverables__text">
+              <strong class="deliverables__name">Estrutura de Observação Interna</strong>
+              <span class="deliverables__desc">Sequência simples para entender o que você sente e por que reage de determinadas formas</span>
+            </div>
+          </li>
+
+          <li class="deliverables__item reveal">
+            <span class="deliverables__icon" aria-hidden="true">
+              <!-- Trail / path -->
+              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6,34 C10,28 14,22 20,20 C26,18 30,14 34,8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                <circle cx="6" cy="34" r="2.5" fill="currentColor" />
+                <circle cx="20" cy="20" r="2.5" fill="currentColor" />
+                <circle cx="34" cy="8" r="2.5" fill="currentColor" />
+                <circle cx="6" cy="34" r="5" stroke="currentColor" stroke-width="1" opacity="0.3" />
+                <circle cx="34" cy="8" r="5" stroke="currentColor" stroke-width="1" opacity="0.3" />
+              </svg>
+            </span>
+            <div class="deliverables__text">
+              <strong class="deliverables__name">Aplicação Prática da Bússola</strong>
+              <span class="deliverables__desc">Como usar nomear, localizar, significar e observar para ganhar clareza emocional</span>
+            </div>
+          </li>
+
+          <li class="deliverables__item reveal">
+            <span class="deliverables__icon" aria-hidden="true">
+              <!-- Lightbulb / example -->
+              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M20,8 C14,8 10,13 10,18 C10,22 12,25 16,27 L16,30 L24,30 L24,27 C28,25 30,22 30,18 C30,13 26,8 20,8 Z"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linejoin="round"
+                />
+                <line x1="16" y1="32" x2="24" y2="32" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                <line x1="17" y1="34.5" x2="23" y2="34.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                <line x1="20" y1="12" x2="20" y2="22" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity="0.5" />
+                <line x1="16" y1="16" x2="24" y2="16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity="0.5" />
+              </svg>
+            </span>
+            <div class="deliverables__text">
+              <strong class="deliverables__name">Exemplo Real Explicado</strong>
+              <span class="deliverables__desc">Demonstração prática de como uma emoção pode ser compreendida e reorganizada</span>
+            </div>
+          </li>
+
+          <li class="deliverables__item reveal">
+            <span class="deliverables__icon" aria-hidden="true">
+              <!-- Checklist -->
+              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="8" y="6" width="24" height="28" rx="3" stroke="currentColor" stroke-width="1.5" />
+                <polyline points="13,15 16,18 22,12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <polyline points="13,23 16,26 22,20" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <line x1="13" y1="31" x2="27" y2="31" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" opacity="0.4" />
+              </svg>
+            </span>
+            <div class="deliverables__text">
+              <strong class="deliverables__name">Checklist de Clareza Emocional</strong>
+              <span class="deliverables__desc">Passo a passo simples para aplicar sempre que se sentir confuso emocionalmente</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===================== SECTION 7: BONUS ===================== -->
+    <section id="bonus">
+      <div class="bonus__container">
+        <div class="bonus__header reveal">
+          <span class="bonus__eyebrow">Bônus</span>
+          <h2 class="bonus__title">E tem mais</h2>
+        </div>
+
+        <ul class="bonus__list">
+          <li class="bonus__item reveal">
+            <span class="bonus__icon" aria-hidden="true">
+              <!-- Key / questions -->
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="9" cy="9" r="5" stroke="currentColor" stroke-width="1.4" />
+                <line x1="13" y1="13" x2="20" y2="20" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" />
+                <line x1="17" y1="18" x2="17" y2="21" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" />
+                <line x1="19" y1="16" x2="22" y2="16" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" />
+              </svg>
+            </span>
+            <span class="bonus__text">Perguntas-chave para aprofundar percepção emocional</span>
+          </li>
+
+          <li class="bonus__item reveal">
+            <span class="bonus__icon" aria-hidden="true">
+              <!-- Visual map -->
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="3" y="3" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.4" />
+                <rect x="14" y="3" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.4" />
+                <rect x="8.5" y="14" width="7" height="7" rx="1.5" stroke="currentColor" stroke-width="1.4" />
+                <line x1="10" y1="6.5" x2="14" y2="6.5" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" />
+                <line x1="17.5" y1="10" x2="12" y2="14" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" />
+                <line x1="6.5" y1="10" x2="12" y2="14" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" />
+              </svg>
+            </span>
+            <span class="bonus__text">Mapa visual da Bússola Emocional</span>
+          </li>
+
+          <li class="bonus__item reveal">
+            <span class="bonus__icon" aria-hidden="true">
+              <!-- Daily script / routine -->
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="4" y="3" width="16" height="18" rx="2" stroke="currentColor" stroke-width="1.4" />
+                <line x1="8" y1="8" x2="16" y2="8" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" />
+                <line x1="8" y1="12" x2="16" y2="12" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" />
+                <line x1="8" y1="16" x2="12" y2="16" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" />
+              </svg>
+            </span>
+            <span class="bonus__text">Roteiro simples para aplicar no dia a dia</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===================== SECTION 8: OBJECTION BREAK ===================== -->
+    <section id="objection">
+      <div class="objection__container">
+        <p class="objection__line objection__line--lead reveal">Você não precisa "se entender completamente" antes de começar.</p>
+
+        <p class="objection__line reveal">A Bússola ajuda a organizar o que já está aí dentro,</p>
+
+        <p class="objection__line objection__line--close reveal">de forma simples, prática e possível</p>
+      </div>
+    </section>
+
+    <!-- ===================== SECTION 9: VALUE ANCHOR ===================== -->
+    <section id="value">
+      <div class="value__container">
+        <h2 class="value__title reveal">O que você está levando</h2>
+
+        <ul class="value__list reveal">
+          <li class="value__row">
+            <span class="value__label">Guia da Bússola Emocional</span>
+            <span class="value__price value__price--struck">R$97</span>
+          </li>
+          <li class="value__row">
+            <span class="value__label">Estrutura de Observação Interna</span>
+            <span class="value__price value__price--struck">R$67</span>
+          </li>
+          <li class="value__row">
+            <span class="value__label">Aplicação Prática da Bússola</span>
+            <span class="value__price value__price--struck">R$67</span>
+          </li>
+          <li class="value__row">
+            <span class="value__label">Exemplo Real Explicado</span>
+            <span class="value__price value__price--struck">R$47</span>
+          </li>
+          <li class="value__row">
+            <span class="value__label">Checklist de Clareza Emocional</span>
+            <span class="value__price value__price--struck">R$37</span>
+          </li>
+          <li class="value__row value__row--bonus">
+            <span class="value__label">Bônus inclusos</span>
+            <span class="value__price value__price--struck">R$111</span>
+          </li>
+        </ul>
+
+        <div class="value__total reveal">
+          <div class="value__total-row">
+            <span class="value__total-label">Valor total</span>
+            <span class="value__total-original">R$426</span>
+          </div>
+          <div class="value__total-row value__total-row--final">
+            <span class="value__total-label value__total-label--final">Por apenas</span>
+            <span class="value__total-price">R$67</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SECTION 10: FINAL CTA ===================== -->
+    <section id="cta-final">
+      <div class="cta-final__bg-glow"></div>
+
+      <div class="cta-final__container">
+        <div class="cta-final__book-col reveal">
+          <div class="cta-final__book-wrapper">
+            <img
+              src="ebook-cover.png"
+              alt="Capa do e-book Bússola Emocional na Prática"
+              class="cta-final__book-img"
+              onerror="
+                this.style.display = 'none';
+                this.nextElementSibling.style.display = 'flex';
+              "
+            />
+            <div class="cta-final__book-placeholder">
+              <span>
+                Capa do
+                <br />
+                E-book
+              </span>
+            </div>
+            <div class="cta-final__book-glow"></div>
+          </div>
+        </div>
+
+        <div class="cta-final__text-col">
+          <p class="cta-final__lead reveal">Você já deu o primeiro passo.</p>
+
+          <h2 class="cta-final__headline reveal">Comece a entender suas emoções com mais clareza, direção e consciência</h2>
+
+          <p class="cta-final__sub reveal">Clique no botão abaixo e tenha acesso imediato.</p>
+
+          <a href="#" class="btn-primary cta-final__btn reveal">
+            Quero acessar agora
+            <span class="btn-primary__arrow">→</span>
+          </a>
+
+          <p class="cta-final__guarantee reveal">
+            <span class="cta-final__guarantee-icon" aria-hidden="true">
+              <!-- Shield / guarantee -->
+              <svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M10 2L3 5V10C3 13.87 6.13 17.5 10 18.5C13.87 17.5 17 13.87 17 10V5L10 2Z"
+                  stroke="currentColor"
+                  stroke-width="1.3"
+                  stroke-linejoin="round"
+                />
+                <polyline points="7,10 9,12.5 13,8" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </span>
+            Acesso imediato após a compra
+          </p>
+        </div>
+      </div>
+
+      <!-- Footer strip -->
+      <div class="cta-final__footer">
+        <span class="cta-final__footer-brand">Bússola Emocional na Prática</span>
+        <span class="cta-final__footer-sep" aria-hidden="true">·</span>
+        <span class="cta-final__footer-tagline">Clareza emocional começa aqui</span>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

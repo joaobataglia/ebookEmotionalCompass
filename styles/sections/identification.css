@@ -1,0 +1,76 @@
+/* ============================================================
+   SECTION: IDENTIFICATION
+   ============================================================ */
+
+#identification {
+  background-color: var(--color-bg);
+  padding: var(--space-2xl) var(--space-md);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Subtle top divider line */
+#identification::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 1.5px;
+  background: linear-gradient(90deg, transparent, var(--color-gold), transparent);
+}
+
+.identification__container {
+  max-width: 720px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-lg);
+  text-align: center;
+}
+
+.identification__line {
+  font-family: var(--font-body);
+  font-size: clamp(1.15rem, 2.2vw, 1.5rem);
+  font-weight: 300;
+  line-height: 1.65;
+  color: var(--color-text);
+  /* Stagger reveal delays for each line */
+}
+
+/* Accented line — the emotional hook */
+.identification__line--accented {
+  font-family: var(--font-display);
+  font-size: clamp(1.3rem, 2.6vw, 1.85rem);
+  font-weight: 600;
+  font-style: italic;
+  color: var(--color-navy);
+}
+
+/* Stagger the reveal animation for each line */
+.identification__line.reveal:nth-child(1) {
+  transition-delay: 0s;
+}
+.identification__line.reveal:nth-child(2) {
+  transition-delay: 0.15s;
+}
+.identification__line.reveal:nth-child(3) {
+  transition-delay: 0.3s;
+}
+.identification__line.reveal:nth-child(4) {
+  transition-delay: 0.45s;
+}
+
+/* ---- Responsive ---- */
+
+@media (max-width: 600px) {
+  #identification {
+    padding: var(--space-xl) var(--space-sm);
+  }
+
+  .identification__container {
+    gap: var(--space-md);
+  }
+}

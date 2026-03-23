@@ -1,0 +1,18 @@
+/* ============================================================
+   MAIN — Import entry point
+   All styles flow through here. Add new section imports below.
+   ============================================================ */
+
+@import "./tokens.css";
+@import "./base.css";
+
+/* Sections — add one line per new section */
+@import "./sections/hero.css";
+@import "./sections/identification.css";
+@import "./sections/pain.css";
+@import "./sections/pattern-break.css";
+@import "./sections/solution.css";
+@import "./sections/deliverables.css";
+@import "./sections/bonus.css";
+@import "./sections/objection-value.css";
+@import "./sections/cta-final.css";

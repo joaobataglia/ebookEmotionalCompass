@@ -1,0 +1,38 @@
+/* ============================================================
+   TOKENS — Design System Variables
+   ============================================================ */
+
+:root {
+  /* Brand colors */
+  --color-bg: #f5efe6;
+  --color-bg-warm: #ede4d6;
+  --color-navy: #1f3a5f;
+  --color-navy-deep: #152c4a;
+  --color-text: #2e2e2e;
+  --color-text-muted: #6b6150;
+  --color-gold: #c8a96a;
+  --color-gold-light: #dfc08a;
+  --color-gold-dark: #a8883f;
+  --color-white: #ffffff;
+
+  /* Typography */
+  --font-display: "Playfair Display", Georgia, serif;
+  --font-body: "Poppins", sans-serif;
+
+  /* Spacing scale */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 1.75rem;
+  --space-lg: 3rem;
+  --space-xl: 5rem;
+  --space-2xl: 8rem;
+
+  /* Radius */
+  --radius-sm: 6px;
+  --radius-md: 14px;
+  --radius-lg: 28px;
+
+  /* Shadows */
+  --shadow-book: 0 32px 80px rgba(31, 58, 95, 0.18), 0 8px 24px rgba(31, 58, 95, 0.1);
+  --shadow-btn: 0 4px 20px rgba(200, 169, 106, 0.4);
+}

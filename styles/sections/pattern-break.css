@@ -1,0 +1,98 @@
+/* ============================================================
+   SECTION: PATTERN BREAK
+   ============================================================ */
+
+#pattern-break {
+  background-color: var(--color-bg);
+  padding: var(--space-2xl) var(--space-md);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Warm glow from bottom-left — a sense of light emerging */
+#pattern-break::before {
+  content: "";
+  position: absolute;
+  bottom: -80px;
+  left: -80px;
+  width: 480px;
+  height: 480px;
+  border-radius: 50%;
+  background: radial-gradient(ellipse at center, rgba(200, 169, 106, 0.1) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+/* Top divider line matching Section 2 */
+#pattern-break::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 1.5px;
+  background: linear-gradient(90deg, transparent, var(--color-gold), transparent);
+}
+
+.pattern-break__container {
+  position: relative;
+  z-index: 1;
+  max-width: 720px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-lg);
+  text-align: center;
+}
+
+.pattern-break__line {
+  font-family: var(--font-body);
+  font-size: clamp(1.05rem, 2vw, 1.35rem);
+  font-weight: 300;
+  line-height: 1.7;
+  color: var(--color-text);
+}
+
+/* The reframe — the core insight of the section */
+.pattern-break__line--emphasis {
+  font-size: clamp(1.1rem, 2.2vw, 1.45rem);
+  font-weight: 400;
+  color: var(--color-navy);
+  max-width: 580px;
+}
+
+/* The punchline — lighter tone, trailing off */
+.pattern-break__line--contrast {
+  font-family: var(--font-display);
+  font-size: clamp(1.2rem, 2.4vw, 1.75rem);
+  font-style: italic;
+  font-weight: 600;
+  color: var(--color-gold-dark);
+}
+
+/* Staggered reveal */
+.pattern-break__line.reveal:nth-child(1) {
+  transition-delay: 0s;
+}
+.pattern-break__line.reveal:nth-child(2) {
+  transition-delay: 0.15s;
+}
+.pattern-break__line.reveal:nth-child(3) {
+  transition-delay: 0.3s;
+}
+.pattern-break__line.reveal:nth-child(4) {
+  transition-delay: 0.45s;
+}
+
+/* ---- Responsive ---- */
+
+@media (max-width: 600px) {
+  #pattern-break {
+    padding: var(--space-xl) var(--space-sm);
+  }
+
+  .pattern-break__container {
+    gap: var(--space-md);
+  }
+}
