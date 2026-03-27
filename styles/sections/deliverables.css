@@ -117,6 +117,63 @@
   line-height: 1.65;
 }
 
+/* ---- Item ---- */
+
+.deliverables__item {
+  display: flex;
+  align-items: stretch; /* image stretches full card height */
+  gap: 0; /* no gap — image bleeds into text */
+  padding: 0; /* remove padding from item, move to text */
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(200, 169, 106, 0.22);
+  background: rgba(200, 169, 106, 0.06);
+  overflow: hidden; /* clips image corners */
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.deliverables__item:hover {
+  transform: translateX(4px);
+  box-shadow: 0 8px 32px rgba(31, 58, 95, 0.08);
+}
+
+/* ---- Image panel ---- */
+
+.deliverables__item-image {
+  position: relative;
+  width: 120px;
+  flex-shrink: 0;
+}
+
+.deliverables__item-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Fade/blend from image into card background */
+.deliverables__item-image::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30%;
+  height: 100%;
+  background: linear-gradient(to right, transparent, rgba(245, 239, 230, 0.85) 70%, /* matches --color-bg */ rgba(245, 239, 230, 0.97) 100%);
+}
+
+/* ---- Text panel ---- */
+
+.deliverables__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.35rem;
+  padding: var(--space-md);
+}
+
 /* Staggered reveal */
 .deliverables__title.reveal {
   transition-delay: 0s;
@@ -157,5 +214,36 @@
 
   .deliverables__item:hover {
     transform: none;
+  }
+
+  #deliverables {
+    padding: var(--space-xl) var(--space-sm);
+  }
+
+  .deliverables__title {
+    text-align: center;
+  }
+
+  .deliverables__item {
+    flex-direction: column;
+  }
+
+  .deliverables__item:hover {
+    transform: none;
+  }
+
+  .deliverables__item-image {
+    width: 100%;
+    height: 140px;
+  }
+
+  /* On mobile the fade goes bottom instead of right */
+  .deliverables__item-image::after {
+    top: auto;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 50%;
+    background: linear-gradient(to bottom, transparent, rgba(245, 239, 230, 0.9) 70%, rgba(245, 239, 230, 0.97) 100%);
   }
 }

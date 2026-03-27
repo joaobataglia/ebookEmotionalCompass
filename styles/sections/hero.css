@@ -101,7 +101,7 @@
   animation-delay: 0.25s;
 }
 
-.hero__headline em {
+.hero__headline strong {
   font-style: italic;
   color: var(--color-gold-dark);
 }
